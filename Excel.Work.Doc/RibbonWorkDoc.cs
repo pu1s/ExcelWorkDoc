@@ -12,5 +12,15 @@ namespace Excel.Work.Doc
         {
             System.Windows.Forms.MessageBox.Show("Load ribbon");
         }
+
+        private void Button1_Click(object sender, RibbonControlEventArgs e)
+        {
+
+        }
+
+        private void EditBox1_TextChanged(object sender, RibbonControlEventArgs e)
+        {
+
+        }
     }
 }
