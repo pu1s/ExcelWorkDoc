@@ -35,8 +35,9 @@
         private void InitializeComponent()
         {
             this.tab1 = this.Factory.CreateRibbonTab();
+            this.menu1 = this.Factory.CreateRibbonMenu();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.editBox1 = this.Factory.CreateRibbonEditBox();
+            this.gallery1 = this.Factory.CreateRibbonGallery();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.SuspendLayout();
@@ -48,20 +49,30 @@
             this.tab1.Label = "TabAddIns";
             this.tab1.Name = "tab1";
             // 
+            // menu1
+            // 
+            this.menu1.Label = "menu1";
+            this.menu1.Name = "menu1";
+            this.menu1.ShowImage = true;
+            // 
             // group1
             // 
-            this.group1.Items.Add(this.editBox1);
+            this.group1.Items.Add(this.gallery1);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
-            // editBox1
+            // gallery1
             // 
-            this.editBox1.Label = "editBox1";
-            this.editBox1.Name = "editBox1";
+            this.gallery1.Label = "gallery1";
+            this.gallery1.Name = "gallery1";
             // 
             // RibbonWorkDoc
             // 
             this.Name = "RibbonWorkDoc";
+            // 
+            // RibbonWorkDoc.OfficeMenu
+            // 
+            this.OfficeMenu.Items.Add(this.menu1);
             this.RibbonType = "Microsoft.Excel.Workbook";
             this.Tabs.Add(this.tab1);
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.RibbonWorkDoc_Load);
@@ -76,8 +87,9 @@
         #endregion
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonMenu menu1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGallery gallery1;
     }
 
     partial class ThisRibbonCollection
