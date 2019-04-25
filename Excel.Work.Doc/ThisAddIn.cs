@@ -13,7 +13,7 @@ namespace Excel.Work.Doc
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show("Hello addin");
+            System.Windows.Forms.MessageBox.Show("Load ThisAddIn");
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
