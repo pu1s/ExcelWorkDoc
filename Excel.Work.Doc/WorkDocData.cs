@@ -40,5 +40,7 @@ namespace Excel.Work.Doc
         public string OrganizationName { get; set; }
         public string MedicalOrganizationName { get; set; }
         public TypeOfEmployment TypeOfEmployment { get; set; }
+
+
     }
 }
